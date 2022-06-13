@@ -26,12 +26,12 @@ if ENV == 'dev':
     
 else:
     app.debug = False
-    DATABASE_URL = ''
+    DATABASE_URL = config.DBURL
     
-    DB_HOST = ''
-    DB_NAME = ''
-    DB_USER = ''
-    DB_PASS = ''
+    DB_HOST = config.DBHOST
+    DB_NAME = config.DBNAME
+    DB_USER = config.DBUSER
+    DB_PASS = config.DBPASS
     
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
