@@ -1,0 +1,2 @@
+teams = ['ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'HOU', 'JER', 'KCC', 'LAG', 'LVT', 'MAU', 'MIA', 'MTL', 'NSH', 'NEV', 'NOC', 'OTT', 'PHI', 'PHX', 'PIT', 'POR', 'SAR', 'SDA', 'SFC', 'SFK', 'SEA', 'UTA', 'WAR']
+leagues = ['LL', 'FL', 'ML', 'NCS', 'RB', 'RBS']
