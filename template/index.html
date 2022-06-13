@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Rogue Power Rankings</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navBar">
+        <nav>
+            <ul class="navBar-list">
+                <li class="homeLink"><a href={{ url_for('login') }}>Admin Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--<a href={{ url_for('login') }}>Admin Login</a>-->
+    <div class="container">
+        <h3 class="heading">United Rogue Power Rankings</h3>
+        <p class="description">Community Rankings Vote</p>
+
+        {% if message %}
+        <p class="message">{{ message | safe }}</p>
+        {% endif %}
+
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Discord Username" maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="league" placeholder="League Abbreviation" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team1" placeholder="Team #1" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team2" placeholder="Team #2" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team3" placeholder="Team #3" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team4" placeholder="Team #4" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team5" placeholder="Team #5" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team6" placeholder="Team #6" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team7" placeholder="Team #7" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team8" placeholder="Team #8" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team9" placeholder="Team #9" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="team10" placeholder="Team #10" maxlength="3">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </form>
+    </div>
+    
+</body>
+</html>
